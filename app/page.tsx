@@ -1,16 +1,20 @@
 import Image from "next/image";
-import { Flex, Text, Button } from "@radix-ui/themes";
-import { BookmarkIcon } from "@radix-ui/react-icons";
+import { BookmarkIcon, MagnifyingGlassIcon } from "@radix-ui/react-icons";
+import { Container, Flex, Heading, Text } from "@radix-ui/themes";
 
 export default function Home() {
   return (
-    <main>
-      <Flex direction="column" gap="2">
-        <Text>Hello from Radix Themes :)</Text>
-      </Flex>
-      <Button>
-        <BookmarkIcon width="16" height="16" /> Bookmark
-      </Button> 
+
+    <main className="flex min-h-screen flex-col items-center justify-between p-24" >
+        <Container size="1">
+            <Flex direction="column">
+              <Heading>Kampusello</Heading>
+              <Text color="gray">Kampusello'ya Hoş Geldiniz!</Text>
+            </Flex>
+
+            
+        </Container>
     </main>
+    
   );
 }
