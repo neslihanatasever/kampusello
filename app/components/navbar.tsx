@@ -1,14 +1,4 @@
-import {
-  Avatar,
-  Badge,
-  Box,
-  Card,
-  Container,
-  Flex,
-  Grid,
-  Heading,
-  Text,
-} from "@radix-ui/themes";
+import { Button, Flex } from "@radix-ui/themes";
 import Link from "next/link";
 
 export const Navbar = () => {
@@ -20,14 +10,11 @@ export const Navbar = () => {
         alt="Logo"
         style={{ width: "50px", height: "auto", borderRadius: "50%" }}
       />
-      <div className="flex gap-10">
+      <div className="flex gap-10 ">
         <Link className="cursor-pointer" href={""}>Kampüs Nedir?</Link>
         <Link className="cursor-pointer" href={""}>Contributors</Link>
         <Link className="cursor-pointer" href={""}>Documention</Link>
       </div>
-      <h1 className="bg-violet-500 hover:bg-red-100 cursor-pointer p-2 rounded-md">
-        Kampusello
-      </h1>
     </menu>
   );
 };

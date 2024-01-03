@@ -12,10 +12,8 @@ import {
 import Link from "next/link";
 
 export default function Home() {
-
-
   return (
-    <main className="flex min-h-screen items-center justify-between p-24">
+    <main className="flex min-h-screen items-center justify-between ">
       <Container size="1" className="flex-1">
         <Flex direction="column">
           <Text className="font-bold text-[20px]" color="gray">Kampusello'ya Hoş Geldiniz!</Text>
@@ -25,23 +23,11 @@ export default function Home() {
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. 
           </Text>
-          <Flex direction="row" gap="5">
-            <Button
-              style={{ width: "100px",
-              height: "30px",
-              marginTop: "10px",
-              color: "black",
-              backgroundColor:"lightgray"}}
-            >
+          <Flex direction="row" gap="2" className="mt-8">
+            <Button color="orange" variant="soft" >
               <Link href="log-in">Login</Link>
             </Button>
-            <Button
-              style={{ width: "100px",
-               height: "30px",
-               marginTop: "10px",
-               color: "black",
-               backgroundColor:"lightgray"}}
-            >
+            <Button color="orange" variant="soft">
               <Link href="/sign-in" >Sign in</Link>
             </Button>
           </Flex>
@@ -50,7 +36,7 @@ export default function Home() {
 
       <Container size="1" className="flex-1">
         <AspectRatio ratio={10 / 10}>
-          <img
+          <img className="transition duration-1000 hover:rotate-[360deg] animate-pulse flex space-x-4 "
             src="https://avatars.githubusercontent.com/u/34745911?s=200&v=4"
             alt="penguin 1"
             style={{
