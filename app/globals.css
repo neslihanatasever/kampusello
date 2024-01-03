@@ -1,31 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* Your styles.css */
-.radix-themes {
-    --red-1: var(--ruby-1);
-    --red-2: var(--ruby-2);
-    --red-3: var(--ruby-3);
-    --red-4: var(--ruby-4);
-    --red-5: var(--ruby-5);
-    --red-6: var(--ruby-6);
-    --red-7: var(--ruby-7);
-    --red-8: var(--ruby-8);
-    --red-9: var(--ruby-9);
-    --red-10: var(--ruby-10);
-    --red-11: var(--ruby-11);
-    --red-12: var(--ruby-12);
-    --red-a1: var(--ruby-a1);
-    --red-a2: var(--ruby-a2);
-    --red-a3: var(--ruby-a3);
-    --red-a4: var(--ruby-a4);
-    --red-a5: var(--ruby-a5);
-    --red-a6: var(--ruby-a6);
-    --red-a7: var(--ruby-a7);
-    --red-a8: var(--ruby-a8);
-    --red-a9: var(--ruby-a9);
-    --red-a10: var(--ruby-a10);
-    --red-a11: var(--ruby-a11);
-    --red-a12: var(--ruby-a12);
-  }

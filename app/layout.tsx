@@ -1,11 +1,24 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Poppins } from "next/font/google"
 import './globals.css'
 import { Theme } from '@radix-ui/themes'
 import '@radix-ui/themes/styles.css';
 import { Navbar } from './components/navbar';
 
-const inter = Inter({ subsets: ['latin'] })
+const textFont = Poppins({
+  subsets: ["latin"],
+  weight: [
+      "100",
+      "200",
+      "300",
+      "400",
+      "500",
+      "600",
+      "700",
+      "800",
+      "900"
+  ]
+})
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -21,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <Theme appearance='dark'>{children}</Theme>
+        <Theme className={textFont.className} appearance='dark'>{children}</Theme>
       </body>
     </html>
   )
