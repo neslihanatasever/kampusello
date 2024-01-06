@@ -25,10 +25,10 @@ export default function Home() {
           </Text>
           <Flex direction="row" gap="2" className="mt-8">
             <Button color="orange" variant="soft" >
-              <Link href="log-in">Login</Link>
+              <Link href="login">Login</Link>
             </Button>
             <Button color="orange" variant="soft">
-              <Link href="/sign-in" >Sign in</Link>
+              <Link href="/signin" >Sign in</Link>
             </Button>
           </Flex>
         </Flex>
@@ -36,7 +36,7 @@ export default function Home() {
 
       <Container size="1" className="flex-1">
         <AspectRatio ratio={10 / 10}>
-          <img className="transition duration-1000 hover:rotate-[360deg] animate-pulse flex space-x-4 "
+          <img className="animate-pulse flex space-x-4 "
             src="https://avatars.githubusercontent.com/u/34745911?s=200&v=4"
             alt="penguin 1"
             style={{
