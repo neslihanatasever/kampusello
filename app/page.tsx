@@ -36,15 +36,11 @@ export default function Home() {
 
       <Container size="1" className="flex-1">
         <AspectRatio ratio={10 / 10}>
-          <img className="animate-pulse flex space-x-4 "
-            src="https://avatars.githubusercontent.com/u/34745911?s=200&v=4"
-            alt="penguin 1"
-            style={{
-              objectFit: "cover",
-              width: "100%",
-              height: "100%",
-              borderRadius: "250px",
-            }}
+          <Image
+            src="/kampuss.png"
+            alt="kampüs logo"
+            layout="fill"
+            objectFit="contain"
           />
         </AspectRatio>
       </Container>
