@@ -24,9 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={textFont.className}>
-        <KampusBg />  
         <Navbar />
-        <Theme appearance="dark">
+        <Theme appearance="dark" >
           {children}
         </Theme>
       </body>

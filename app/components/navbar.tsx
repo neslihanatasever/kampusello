@@ -9,7 +9,7 @@ export const Navbar = () => {
       <Container size="1">
         <Box py="9">
           <Flex gap="3" justify="between" align="center">
-            <Avatar.Root className="AvatarRoot w-[65px] ml-[100px]">
+            <Avatar.Root className="AvatarRoot w-[65px] ml-[150px]">
               <Avatar.Image 
                 className="AvatarImage"
                 src="https://avatars.githubusercontent.com/u/34745911?s=200&v=4"
@@ -28,7 +28,7 @@ export const Navbar = () => {
               <Link style={{ marginRight: 15 }} href={""}>
                 Contributors
               </Link>
-              <Link style={{ marginRight: 100 }} href={""}>
+              <Link style={{ marginRight: 150 }} href={""}>
                 Documention
               </Link>
             </Flex>
