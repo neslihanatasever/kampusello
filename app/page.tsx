@@ -16,7 +16,7 @@ export default function Home() {
     <main className="flex min-h-screen items-center justify-between ">
       <Container size="1" className="flex-1">
         <Flex direction="column">
-          <Text className="font-bold text-[20px]" color="gray">Kampusello'ya Hoş Geldiniz!</Text>
+          <Text className="font-bold text-[20px]" color="gray">Kampuselloya Hoş Geldiniz!</Text>
           <Text className="font-extralight text-[18px]"  color="gray" style={{ marginTop: "20px" }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
