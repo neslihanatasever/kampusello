@@ -25,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={textFont.className}>
         <main className="">
+          <Navbar />
           <Theme appearance="dark">{children}</Theme>
         </main>
       </body>
