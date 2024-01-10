@@ -13,17 +13,23 @@ import {
   Text,
 } from "@radix-ui/themes";
 import { EyeOpenIcon, PersonIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 
 const LoginPage = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <Flex
+    align="center"
+      justify="center"
+      direction="column"
+      style={{ height: "calc(100vh - 110px)" }}
+    >
       <Card style={{ width: 400 }} size="4">
         <Flex gap="3" direction="column">
           <Heading size="6" align="left">
             Login
           </Heading>
           <Box>
-            <Text size="2" weight="bold" className="mb-3">
+            <Text size="2" weight="bold" >
               Email Address
             </Text>
             <TextFieldRoot style={{ marginTop: 5 }}>
@@ -46,14 +52,15 @@ const LoginPage = () => {
             </TextFieldRoot>
           </Box>
           <Flex gap="3" justify="end">
-            <Button color="orange" variant="soft">
-              Create an Account
+            <Button color="orange" variant="soft"> 
+              
+              <Link href="/signin">Create an Account</Link>
             </Button>
             <Button color="orange">Login</Button>
           </Flex>
         </Flex>
       </Card>
-    </div>
+      </Flex>
   );
 };
 

@@ -11,19 +11,26 @@ import {
   TextFieldRoot,
   TextFieldSlot,
   Text,
+  Grid,
 } from "@radix-ui/themes";
 import { EyeOpenIcon, PersonIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 
 const SignPage = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <Flex
+      align="center"
+      justify="center"
+      direction="column"
+      style={{ height: "calc(100vh - 110px)" }}
+    >
       <Card style={{ width: 400 }} size="4">
         <Flex gap="3" direction="column">
           <Heading size="6" align="left">
             Sign Up
           </Heading>
           <Box>
-            <Text size="2" weight="bold" className="mb-3">
+            <Text size="2" weight="bold">
               Email Address
             </Text>
             <TextFieldRoot style={{ marginTop: 5 }}>
@@ -33,7 +40,6 @@ const SignPage = () => {
               <TextFieldInput size="2" />
             </TextFieldRoot>
           </Box>
-
           <Box>
             <Text size="2" weight="bold">
               Password
@@ -46,12 +52,29 @@ const SignPage = () => {
             </TextFieldRoot>
           </Box>
           <Flex gap="3" justify="center">
-            <Button color="orange">Sign Up</Button>
+            <Button color="orange">
+              <Link href="">Sign Up</Link>
+            </Button>
           </Flex>
-          <h1>or continue with</h1>
+          <Flex
+            direction="column"
+            gap="5"
+            width="auto"
+            style={{ marginTop: 8 }}
+          >
+            <Text size="2" weight="bold" align="center">
+              Continue with Account
+            </Text>
+            <Button variant="soft" highContrast>
+              <Link href={""}>Google</Link>
+            </Button>
+            <Button variant="soft" highContrast color="orange">
+              <Link href={""}>GitHub</Link>
+            </Button>
+          </Flex>
         </Flex>
       </Card>
-    </div>
+    </Flex>
   );
 };
 
