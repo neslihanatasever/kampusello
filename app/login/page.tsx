@@ -12,16 +12,22 @@ import {
   TextFieldSlot,
   Text,
 } from "@radix-ui/themes";
-import { EyeOpenIcon, PersonIcon } from "@radix-ui/react-icons";
+import { EyeClosedIcon, EyeOpenIcon, PersonIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
 const LoginPage = () => {
+  const [isPasswordVisible, setIsPasswordVisible] = React.useState(false);
+
+  const togglePasswordVisibility = () => {
+    setIsPasswordVisible((prev) => !prev);
+  };
+  
   return (
     <Flex
     align="center"
       justify="center"
       direction="column"
-      style={{ height: "calc(100vh - 110px)" }}
+      style={{height: "100vh"}}
     >
       <Card style={{ width: 400 }} size="4">
         <Flex gap="3" direction="column">
@@ -46,14 +52,20 @@ const LoginPage = () => {
             </Text>
             <TextFieldRoot style={{ marginTop: 5 }}>
               <TextFieldSlot>
-                <EyeOpenIcon />
+                {isPasswordVisible ? (
+                  <EyeOpenIcon onClick={togglePasswordVisibility} />
+                ) : (
+                  <EyeClosedIcon onClick={togglePasswordVisibility} />
+                )}
               </TextFieldSlot>
-              <TextFieldInput size="2" type="password" />
+              <TextFieldInput
+                size="2"
+                type={isPasswordVisible ? "text" : "password"}
+              />
             </TextFieldRoot>
           </Box>
           <Flex gap="3" justify="center" mt="2">
             <Button color="orange" variant="soft"> 
-              
               <Link href="/signin">Create an Account</Link>
             </Button>
             <Button color="orange">Login</Button>
@@ -65,7 +77,7 @@ const LoginPage = () => {
             width="auto"
             style={{ marginTop: 8 }}
           >
-            <Text size="2" weight="bold" align="center" mt="3">
+            <Text size="2" weight="bold" align="center" mt="2">
               Continue with Account
             </Text>
             <Button variant="soft" highContrast>
