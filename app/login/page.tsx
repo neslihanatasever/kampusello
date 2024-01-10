@@ -51,7 +51,7 @@ const LoginPage = () => {
               <TextFieldInput size="2" type="password" />
             </TextFieldRoot>
           </Box>
-          <Flex gap="3" justify="end">
+          <Flex gap="3" justify="center" mt="2">
             <Button color="orange" variant="soft"> 
               
               <Link href="/signin">Create an Account</Link>
@@ -59,6 +59,22 @@ const LoginPage = () => {
             <Button color="orange">Login</Button>
           </Flex>
         </Flex>
+        <Flex
+            direction="column"
+            gap="5"
+            width="auto"
+            style={{ marginTop: 8 }}
+          >
+            <Text size="2" weight="bold" align="center" mt="3">
+              Continue with Account
+            </Text>
+            <Button variant="soft" highContrast>
+              <Link href={""}>Google</Link>
+            </Button>
+            <Button variant="soft" highContrast color="orange">
+              <Link href={""}>GitHub</Link>
+            </Button>
+          </Flex>
       </Card>
       </Flex>
   );

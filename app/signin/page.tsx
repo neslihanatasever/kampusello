@@ -51,7 +51,7 @@ const SignPage = () => {
               <TextFieldInput size="2" type="password" />
             </TextFieldRoot>
           </Box>
-          <Flex gap="3" justify="center">
+          <Flex gap="3" justify="center" mt="2">
             <Button color="orange">
               <Link href="">Sign Up</Link>
             </Button>
@@ -62,7 +62,7 @@ const SignPage = () => {
             width="auto"
             style={{ marginTop: 8 }}
           >
-            <Text size="2" weight="bold" align="center">
+            <Text size="2" weight="bold" align="center" mt="3">
               Continue with Account
             </Text>
             <Button variant="soft" highContrast>
