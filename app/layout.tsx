@@ -24,8 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={textFont.className}>
-        <main className="flex min-h-screen items-center justify-between">
-          <Navbar />
+        <main className="">
           <Theme appearance="dark">{children}</Theme>
         </main>
       </body>
