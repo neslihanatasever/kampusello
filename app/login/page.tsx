@@ -20,7 +20,7 @@ const LoginPage = () => {
       <Card style={{ width: 400 }} size="4">
         <Flex gap="3" direction="column">
           <Heading size="6" align="left">
-            Sign Up
+            Login
           </Heading>
           <Box>
             <Text size="2" weight="bold" className="mb-3">
@@ -49,7 +49,7 @@ const LoginPage = () => {
             <Button color="orange" variant="soft">
               Create an Account
             </Button>
-            <Button color="orange">Sign Up</Button>
+            <Button color="orange">Login</Button>
           </Flex>
         </Flex>
       </Card>

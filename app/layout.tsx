@@ -4,7 +4,7 @@ import "./globals.css";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
 import { Navbar } from "./components/navbar";
-import  KampusBg  from "./components/kampusbg";
+import KampusBg from "./components/kampusbg";
 
 const textFont = Poppins({
   subsets: ["latin"],
@@ -24,10 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={textFont.className}>
-        <Navbar />
-        <Theme appearance="dark" >
-          {children}
-        </Theme>
+        <main className="flex min-h-screen items-center justify-between">
+          <Navbar />
+          <Theme appearance="dark">{children}</Theme>
+        </main>
       </body>
     </html>
   );

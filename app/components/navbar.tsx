@@ -5,8 +5,7 @@ import { Box, Container, Flex } from "@radix-ui/themes";
 
 export const Navbar = () => {
   return (
-    <Box position="fixed" className="container z-10 mt-10">
-      <Container size="1">
+      <Container size="1" position="fixed" top="0">
         <Box py="9">
           <Flex gap="3" justify="between" align="center">
             <Avatar.Root className="AvatarRoot w-[65px] ml-[150px]">
@@ -35,6 +34,5 @@ export const Navbar = () => {
           </Flex>
         </Box>
       </Container>
-    </Box>
   );
 };
