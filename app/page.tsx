@@ -12,7 +12,6 @@ import {
   Text,
 } from "@radix-ui/themes";
 import Link from "next/link";
-import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
@@ -36,9 +35,8 @@ export default function Home() {
         numaralı görev yöneticisi ve yapılacaklar listesi uygulaması.
       </Text>
       <Button size="3" variant="soft" color="orange">
-        <Link href="/login">Hemen Başla</Link>
+        <Link href="/sign-up">Hemen Başla</Link>
       </Button>
-      <UserButton afterSignOutUrl="/"  />
     </Flex>
   );
 }
