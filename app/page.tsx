@@ -35,7 +35,7 @@ export default function Home() {
         numaralı görev yöneticisi ve yapılacaklar listesi uygulaması.
       </Text>
       <Button size="3" variant="soft" color="orange">
-        <Link href="/sign-up">Hemen Başla</Link>
+        <Link href="/sign-in">Hemen Başla</Link>
       </Button>
     </Flex>
   );
