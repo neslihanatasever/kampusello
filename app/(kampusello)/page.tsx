@@ -1,17 +1,12 @@
-import Image from "next/image";
-import { BookmarkIcon, MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import {
-  AspectRatio,
   Avatar,
-  Box,
   Button,
-  Container,
   Flex,
-  Grid,
   Heading,
   Text,
 } from "@radix-ui/themes";
 import Link from "next/link";
+import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
@@ -37,6 +32,7 @@ export default function Home() {
       <Button size="3" variant="soft" color="orange">
         <Link href="/sign-in">Hemen Başla</Link>
       </Button>
+      <UserButton afterSignOutUrl="/"/>
     </Flex>
   );
 }

@@ -4,6 +4,7 @@ import "./globals.css";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
 import { Navbar } from "./components/navbar";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const textFont = Poppins({
   subsets: ["latin"],
@@ -23,9 +24,11 @@ export default function RootLayout({
   return (
       <html lang="en">
       <body className={textFont.className}>
+        <ClerkProvider>
         <main className="">
           <Theme appearance="dark">{children}</Theme>
         </main>
+        </ClerkProvider>
       </body>
     </html>
   );
