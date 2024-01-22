@@ -2,12 +2,9 @@
 import {
   CalendarIcon,
   CaretDownIcon,
-  DotsVerticalIcon,
-  MagnifyingGlassIcon,
 } from "@radix-ui/react-icons";
 import {
   Avatar,
-  Button,
   Card,
   DropdownMenu,
   Flex,
@@ -16,7 +13,7 @@ import {
   Text,
 } from "@radix-ui/themes";
 
-export default function CreateTodo() {
+export default function CardComponent() {
   return (
     <Flex justify="center" style={{margin: 200 }}>
       <Card size="3" style={{ maxWidth: 350, maxHeight: 350 }}>
