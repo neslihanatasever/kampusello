@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Theme } from "@radix-ui/themes";
 import "@radix-ui/themes/styles.css";
-import { Navbar } from "./components/navbar";
 import { ClerkProvider } from "@clerk/nextjs";
 
 const textFont = Poppins({
