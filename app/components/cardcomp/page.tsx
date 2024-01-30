@@ -15,11 +15,11 @@ import {
 
 export default function CardComponent() {
   return (
-    <Flex justify="center" style={{margin: 200 }}>
-      <Card size="3" style={{ maxWidth: 350, maxHeight: 350 }}>
-      <Flex direction="column" gap="5" p="2">
+    <Flex justify="center" style={{ }}>
+      <Card size="2" style={{ maxWidth: 350, maxHeight: 350 }}>
+      <Flex direction="column" gap="2" p="2">
         <Flex display="flex" justify="between" direction="row">
-          <Text size="3" weight="bold">
+          <Text size="3" weight="bold" color="gray">
             Radix UI tasarım şablonu çıkartmak
           </Text>
           <DropdownMenu.Root>
