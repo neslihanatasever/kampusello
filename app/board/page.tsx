@@ -1,6 +1,7 @@
 import HeaderComponent from "@/app/components/headercomp/page";
 import NavbarComponent from "@/app/components/navbarcomp/page";
 import {
+  Button,
   Container,
   Flex,
   ScrollArea,
@@ -9,6 +10,8 @@ import {
 } from "@radix-ui/themes";
 import React from "react";
 import CardComponent from "../components/cardcomp/page";
+import { BookmarkIcon, PlusIcon } from "@radix-ui/react-icons";
+import PopupPage from "../components/popup/page";
 
 export default function BoardPage() {
   return (
@@ -25,6 +28,7 @@ export default function BoardPage() {
             <Flex direction="row" gap="3">
               <Flex gap="3" wrap="wrap" direction="column">
                 <Text weight="bold">🌱 To Do</Text>
+                <PopupPage />
                 <CardComponent />
                 <CardComponent />
               </Flex>
@@ -40,9 +44,6 @@ export default function BoardPage() {
               </Flex>
               <Flex gap="3" wrap="wrap" direction="column">
                 <Text weight="bold">🌻 Done</Text>
-                <CardComponent />
-                <CardComponent />
-                <CardComponent />
                 <CardComponent />
               </Flex>
             </Flex>

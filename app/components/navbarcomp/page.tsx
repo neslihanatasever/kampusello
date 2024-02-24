@@ -9,16 +9,10 @@ export default function NavbarComponent() {
         gap="5"
         justify="between"
         mt="5"
-        ml="8"
+        ml="5"
         style={{ height: "calc(100vh - 130px)" }}
       >
         <Flex gap="5" direction="column">
-          <Avatar
-            fallback={"a"}
-            size="4"
-            src="https://avatars.githubusercontent.com/u/34745911?s=200&v=4"
-          ></Avatar>
-
           <Flex align="center" gap="3">
             <IconButton size="3" color="blue" variant="soft">
               <DashboardIcon width="18" height="18" />
