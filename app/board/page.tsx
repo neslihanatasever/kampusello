@@ -15,7 +15,7 @@ import PopupPage from "../components/popup/page";
 
 export default function BoardPage() {
   return (
-    <div>
+    <div >
       <HeaderComponent />
       <Flex>
         <NavbarComponent />
@@ -24,7 +24,7 @@ export default function BoardPage() {
           scrollbars="vertical"
           style={{ height: "calc(100vh - 130px)" }}
         >
-          <Container mt="9">
+          <Container p="9">
             <Flex direction="row" gap="3">
               <Flex gap="3" wrap="wrap" direction="column">
                 <Text weight="bold">🌱 To Do</Text>
