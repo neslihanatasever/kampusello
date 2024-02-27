@@ -1,5 +1,5 @@
-import HeaderComponent from "@/app/components/headercomp/page";
-import NavbarComponent from "@/app/components/navbarcomp/page";
+import HeaderComponent from "@/app/components/header/page";
+import NavbarComponent from "@/app/components/navbar/page";
 import {
   Button,
   Container,
@@ -9,13 +9,13 @@ import {
   Text,
 } from "@radix-ui/themes";
 import React from "react";
-import CardComponent from "../components/cardcomp/page";
+import CardComponent from "../components/card/page";
 import { BookmarkIcon, PlusIcon } from "@radix-ui/react-icons";
 import PopupPage from "../components/popup/page";
 
 export default function BoardPage() {
   return (
-    <div >
+    <div>
       <HeaderComponent />
       <Flex>
         <NavbarComponent />
